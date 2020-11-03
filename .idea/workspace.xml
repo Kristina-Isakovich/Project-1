@@ -1,17 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="854734ca-1690-494b-b9b3-e4d3c0248048" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/CSS/img/image 1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CSS/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/icons/facebook.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/icons/google.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/icons/instagram.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/icons/linkedin.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/icons/pinterest.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/icons/twitter.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/image_right.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CSS/img/architecture.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/icons/avatar.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/icons/crafted.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/icons/customize.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/icons/design.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/logo-2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CSS/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/CSS/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,6 +45,13 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="hiddenUrls">
+      <set>
+        <option value="https://github.com/Kristina-Isakovich/Project-1" />
+      </set>
+    </option>
   </component>
   <component name="ProjectId" id="1jCHcKQS8KMMLzUjHZXGcq20X9Y" />
   <component name="ProjectViewState">
@@ -55,17 +80,58 @@
       <option name="presentableId" value="Default" />
       <updated>1603301233482</updated>
       <workItem from="1603301234924" duration="70338000" />
-      <workItem from="1603635440709" duration="1307000" />
+      <workItem from="1603635440709" duration="61548000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="WindowStateProjectService">
     <state x="395" y="91" key="#Inspections" timestamp="1603554943275">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="395" y="91" key="#Inspections/0.0.1536.824@0.0.1536.824" timestamp="1603554943275" />
+    <state x="522" y="236" key="#Notifications" timestamp="1604423422459">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="522" y="236" key="#Notifications/0.0.1536.824@0.0.1536.824" timestamp="1604423422459" />
+    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1604142534879">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1604142534879" />
+    <state x="93" y="93" width="1350" height="638" key="DiffContextDialog" timestamp="1604423670288">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="93" y="93" width="1350" height="638" key="DiffContextDialog/0.0.1536.824@0.0.1536.824" timestamp="1604423670288" />
+    <state x="586" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1604430308234">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="586" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1604430308234" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1604136468851">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1604136468851" />
   </component>
 </project>
