@@ -9,15 +9,31 @@ a{
     color: white;
 }
 
+img[src*='icons']:hover{
+    transition: 1s;
+    transform: scale(1.3);
+}
+
 ul{
     list-style-type: none;
     padding: 0;
 }
 
+button{
+    cursor: pointer;
+}
+
 input::-webkit-input-placeholder{
     color: #BDBDBD;
-    padding-left: 12px;
     font-size: 14px;
+}
+
+input{
+    padding-left: 12px;
+}
+
+input:invalid{
+    background-color: #e7b98e;
 }
 
 .main-header{
@@ -30,7 +46,7 @@ input::-webkit-input-placeholder{
     justify-content: space-between;
     position: sticky;
     top: 0;
-    z-index: 100;
+    z-index: 2;
 }
 
 .header-menu{
@@ -59,7 +75,7 @@ input::-webkit-input-placeholder{
 }
 
 .main-panel-container{
-    margin-right: 215px; /*Какой сделать отступ*/
+    margin-right: 215px;
 }
 
 .main-panel-logo{
@@ -68,7 +84,8 @@ input::-webkit-input-placeholder{
 
 .main-panel-title{
     text-transform: uppercase;
-    margin-bottom: 66px;
+    padding-bottom: 32px;
+    margin-bottom: 32px;
     font-size: 36px;
     color: #FFF;
     position: relative;
@@ -80,7 +97,7 @@ input::-webkit-input-placeholder{
     position: absolute;
     height: 2px;
     width: 100px;
-    bottom: -32px;
+    bottom: 0;
     left: 0;
     background-color: #FFF;
 }
@@ -114,7 +131,6 @@ input::-webkit-input-placeholder{
 
 .main-panel-form-title{
     display: flex;
-    width: 360px;
     height: 54px;
     background-color: #DFDFDF;
     border-radius: 5px 5px 0 0;
@@ -164,17 +180,17 @@ input::-webkit-input-placeholder{
 
 .brand-bar{
     display: flex;
-    height: 105px;
+    min-height: 105px;
     background-color: #fff;
     box-shadow: 0  -1px 13px rgba(0, 0, 0, 0.25);
     justify-content: space-between;
     align-items: center;
-    padding-left: 144px;
-    padding-right: 139px;
+    padding: 18px 140px;
 }
 
 .brand-bar-content{
     max-width: 390px;
+    margin-right: 10px;
 }
 
 .brand-bar-content p:first-child{
@@ -190,10 +206,10 @@ input::-webkit-input-placeholder{
 
 .social-icons{
     display: flex;
+    height: 40px;
 }
 
 .social-icons>li:not(:last-child){
-    display: flex;
     margin-right: 32px;
 }
 
@@ -221,6 +237,12 @@ input::-webkit-input-placeholder{
     font-size: 15px;
     line-height: 20px;
     border: 0;
+    transition: 1s;
+}
+
+.features-tab:hover{
+    border: 2px solid #fff;
+    transform: scale(1.2);
 }
 
 .features-tab-1{
@@ -297,7 +319,8 @@ input::-webkit-input-placeholder{
 .our-process-title{
     font-size: 36px;
     line-height: 43px;
-    margin-bottom: 46px;
+    padding-bottom: 22px;
+    margin-bottom: 22px;
     font-weight: normal;
     position: relative;
 }
@@ -308,8 +331,9 @@ input::-webkit-input-placeholder{
     height: 2px;
     width: 102px;
     background-color: #FF8B38;
-    bottom: -22px;
-    left: 40%;
+    bottom: 0;
+    left: 50%;
+    transform-origin: 50% 0;
 }
 
 .our-process-about{
@@ -368,7 +392,8 @@ input::-webkit-input-placeholder{
     font-size: 36px;
     line-height: 43px;
     text-transform: uppercase; /*Все буквы заглавные*/
-    margin-bottom: 46px;
+    padding-bottom: 22px;
+    margin-bottom: 22px;
     font-weight: normal;
     position: relative;
 }
@@ -379,7 +404,7 @@ input::-webkit-input-placeholder{
     height: 2px;
     width: 64px;
     background-color: #FF8B38;
-    bottom: -22px;
+    bottom: 0;
     left: 40%;
 }
 
@@ -433,7 +458,7 @@ input::-webkit-input-placeholder{
     font-style: italic;
     background-color: #333;
     color: rgba(255, 255, 255, 0.7);
-    margin-bottom: 5px;
+    padding-bottom: 5px;
     position: relative;
 }
 
@@ -443,7 +468,7 @@ input::-webkit-input-placeholder{
     height: 5px;
     width: inherit;
     background-color: #FF8B38;
-    bottom: -10%;
+    bottom: 0;
 }
 
 .pricing-slot-feature{
@@ -492,7 +517,8 @@ input::-webkit-input-placeholder{
     font-size: 36px;
     line-height: 43px;
     text-transform: uppercase; /*Все буквы заглавные*/
-    margin-bottom: 46px;
+    padding-bottom: 22px;
+    margin-bottom: 22px;
     font-weight: normal;
     position: relative;
 }
@@ -503,7 +529,7 @@ input::-webkit-input-placeholder{
     height: 2px;
     width: 64px;
     background-color: #FF8B38;
-    bottom: -22px;
+    bottom: 0;
     left: 45%;
 }
 
@@ -536,10 +562,23 @@ input::-webkit-input-placeholder{
     background-color: #F5F5F5;
     color: #86878B;
     font-size: 14px;
+    line-height: 16px;
     font-style: italic;
     margin-bottom: 28px;
     padding-left: 12px;
+    position: relative;
 }
+
+.reviews-content-text:after{
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 15px;
+    border: solid transparent;
+    border-top-color: #F5F5F5;
+    border-width: 17px;
+}
+
 
 .reviews-content-user{
     display: flex;
@@ -574,8 +613,8 @@ input::-webkit-input-placeholder{
 
 
 .custom{
-    background-image: url("./img/architecture.png");
     min-height: 297px;
+    background: url("./img/architecture.png");
     padding: 54px 490px;
     display: flex;
     flex-direction: column;
@@ -588,7 +627,8 @@ input::-webkit-input-placeholder{
     line-height: 43px;
     color: #fff;
     text-transform: uppercase; /*Все буквы заглавные*/
-    margin-bottom: 46px;
+    padding-bottom: 22px;
+    margin-bottom: 22px;
     font-weight: normal;
     position: relative;
 }
@@ -599,7 +639,7 @@ input::-webkit-input-placeholder{
     height: 2px;
     width: 64px;
     background-color: #fff;
-    bottom: -22px;
+    bottom: 0;
     left: 45%;
 }
 
@@ -619,7 +659,7 @@ input::-webkit-input-placeholder{
     font-size: 15px;
     color: #ffffff;
     transition-property: background-color;
-    transition-duration: .5s;
+    transition-duration: .2s;
 }
 .custom-btn:hover{
     background-color: #9d9ea2;
@@ -646,7 +686,8 @@ input::-webkit-input-placeholder{
     font-size: 36px;
     line-height: 43px;
     text-transform: uppercase; /*Все буквы заглавные*/
-    margin-bottom: 46px;
+    padding-bottom: 22px;
+    margin-bottom: 22px;
     font-weight: normal;
     position: relative;
 }
@@ -657,7 +698,7 @@ input::-webkit-input-placeholder{
     height: 2px;
     width: 64px;
     background-color: #ff8b38;
-    bottom: -22px;
+    bottom: 0;
     left: 40%;
 }
 
