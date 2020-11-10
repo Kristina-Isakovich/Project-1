@@ -9,7 +9,8 @@ a{
     color: white;
 }
 
-img[src*='icons']:hover{
+.icon:hover{
+    will-change: ttransform;
     transition: 1s;
     transform: scale(1.3);
 }
@@ -21,6 +22,7 @@ ul{
 
 button{
     cursor: pointer;
+    color: #FF9B51;
 }
 
 input::-webkit-input-placeholder{
@@ -29,17 +31,45 @@ input::-webkit-input-placeholder{
 }
 
 input{
-    padding-left: 12px;
+    padding: 1px 12px;
 }
 
 input:invalid{
     background-color: #e7b98e;
 }
 
+.title{
+    text-transform: uppercase;
+    font-size: 36px;
+    font-weight: normal;
+    line-height: 43px;
+}
+
+.title-black{
+    padding-bottom: 22px;
+    margin-bottom: 22px;
+    position: relative;
+ }
+
+.title-black::after{
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 102px;
+    background-color: #FF8B38;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+ }
+
+
+
+
+
+/* HEADER */
 .main-header{
-    padding-left: 143px;
-    padding-right: 141px;
-    height: 64px;
+    padding: 0 145px;
+    min-height: 64px;
     background-color: #000;
     display: flex;
     align-items: center;
@@ -54,7 +84,6 @@ input:invalid{
 }
 
 .header-menu li:not(:last-child){
-    display: flex;
     margin-right: 22px;
 }
 
@@ -63,19 +92,22 @@ input:invalid{
 }
 
 
+
+
 /*MAIN-PANEL*/
 
 
 .main-panel{
     background-image: url("./img/image 1.png");
-    padding: 102px 140px 140px 140px;
+    padding: 110px 145px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
 }
 
 .main-panel-container{
-    margin-right: 215px;
+    max-width: 542px;
 }
 
 .main-panel-logo{
@@ -83,14 +115,11 @@ input:invalid{
 }
 
 .main-panel-title{
-    text-transform: uppercase;
     padding-bottom: 32px;
     margin-bottom: 32px;
-    font-size: 36px;
     color: #FFF;
     position: relative;
-    font-weight: normal;
-}
+ }
 
 .main-panel-title::after{
     content: "";
@@ -110,8 +139,8 @@ input:invalid{
 }
 
 .main-panel-btn{
-    width: 134px;
-    height: 42px;
+    min-width: 134px;
+    min-height: 42px;
     background-color: transparent;
     border: 1px solid #FFF;
     border-radius: 4px;
@@ -120,20 +149,22 @@ input:invalid{
 }
 
 .main-panel-btn:hover{
-    background-color: gray;
+    background-color: #dfdfdf;
     border: transparent;
 }
 
 .main-panel-form{
     display: flex;
     flex-direction: column;
+    border-radius: 5px;
+    overflow: hidden;
+    min-width: 360px;
 }
 
 .main-panel-form-title{
     display: flex;
-    height: 54px;
+    min-height: 54px;
     background-color: #DFDFDF;
-    border-radius: 5px 5px 0 0;
     color: #333;
     font-size: 20px;
     align-items: center;
@@ -145,44 +176,42 @@ input:invalid{
     color: #FF9B51;
 }
 
-.main-panel-form-date{
+.main-panel-form-data{
     background-color: #fff;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     padding: 36px 42px 56px 42px;
-    width: 360px;
-    height: 260px;
+    min-height: 260px;
 }
 
-.main-panel-form-date>input{
+.main-panel-input{
     height: 32px;
     border-width: 0 0 1px 0;
     border-bottom-color: #DFDFDF;
 }
 
+.main-panel-input:not(:last-child){
+    margin-bottom: 44px;
+}
+
 .main-panel-form-btn{
-    height: 54px;
+    min-height: 54px;
     background-color: #FF9B51;
-    border-radius: 0 0 5px 5px;
     color: #FFF;
     font-size: 15px;
     border-width: 0;
 }
 
-.main-panel-form-btn:hover{
-    background-color: #86878B;
-}
 
 
-/*BAND-BAR*/
 
+/*BRAND-BAR*/
 
 .brand-bar{
     display: flex;
     min-height: 105px;
     background-color: #fff;
-    box-shadow: 0  -1px 13px rgba(0, 0, 0, 0.25);
     justify-content: space-between;
     align-items: center;
     padding: 18px 140px;
@@ -190,15 +219,14 @@ input:invalid{
 
 .brand-bar-content{
     max-width: 390px;
-    margin-right: 10px;
 }
 
-.brand-bar-content p:first-child{
-    font-size: 20px;
+.brand-bar-content-title{
     margin-bottom: 6px;
+    font-size: 20px;
 }
 
-.brand-bar-content p:last-child{
+.brand-bar-content p{
     font-size: 14px;
     color: #86878B;
     line-height: 20px;
@@ -206,7 +234,11 @@ input:invalid{
 
 .social-icons{
     display: flex;
-    height: 40px;
+    flex-wrap: wrap;
+}
+
+.social-icon{
+    display: inline-block;
 }
 
 .social-icons>li:not(:last-child){
@@ -222,6 +254,7 @@ input:invalid{
     padding: 130px 140px;
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
 .features-tabs{
@@ -231,11 +264,13 @@ input:invalid{
 }
 
 .features-tab{
-    height: 112px;
-    width: 112px;
+    min-height: 112px;
+    min-width: 112px;
     color: #FFF;
     font-size: 15px;
     line-height: 20px;
+    border-radius: 4px;
+    overflow: hidden;
     border: 0;
     transition: 1s;
 }
@@ -248,7 +283,6 @@ input:invalid{
 .features-tab-1{
     background-color: #FF9B51;
     margin-bottom: 2px;
-    border-radius: 4px 4px 0 0;
 }
 
 .features-tab-2{
@@ -258,7 +292,6 @@ input:invalid{
 
 .features-tab-3{
     background-color: #333;
-    border-radius: 0 0 4px 4px
 }
 
 .features-content{
@@ -291,14 +324,6 @@ input:invalid{
     color: #fff;
 }
 
-.features-content-btn:hover{
-    background-color: #000;
-}
-
-.features-content-city{
-    width: 320px;
-    height: 253px;
-}
 
 
 
@@ -314,26 +339,6 @@ input:invalid{
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-}
-
-.our-process-title{
-    font-size: 36px;
-    line-height: 43px;
-    padding-bottom: 22px;
-    margin-bottom: 22px;
-    font-weight: normal;
-    position: relative;
-}
-
-.our-process-title::after{
-    content: "";
-    position: absolute;
-    height: 2px;
-    width: 102px;
-    background-color: #FF8B38;
-    bottom: 0;
-    left: 50%;
-    transform-origin: 50% 0;
 }
 
 .our-process-about{
@@ -386,26 +391,6 @@ input:invalid{
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-}
-
-.pricing-title{
-    font-size: 36px;
-    line-height: 43px;
-    text-transform: uppercase; /*Все буквы заглавные*/
-    padding-bottom: 22px;
-    margin-bottom: 22px;
-    font-weight: normal;
-    position: relative;
-}
-
-.pricing-title::after{
-    content: "";
-    position: absolute;
-    height: 2px;
-    width: 64px;
-    background-color: #FF8B38;
-    bottom: 0;
-    left: 40%;
 }
 
 .pricing-about{
@@ -512,27 +497,6 @@ input:invalid{
     justify-content: space-between;
 }
 
-
-.reviews-title{
-    font-size: 36px;
-    line-height: 43px;
-    text-transform: uppercase; /*Все буквы заглавные*/
-    padding-bottom: 22px;
-    margin-bottom: 22px;
-    font-weight: normal;
-    position: relative;
-}
-
-.reviews-title::after{
-    content: "";
-    position: absolute;
-    height: 2px;
-    width: 64px;
-    background-color: #FF8B38;
-    bottom: 0;
-    left: 45%;
-}
-
 .reviews-about{
     font-size: 14px;
     line-height: 20px;
@@ -623,13 +587,9 @@ input:invalid{
 }
 
 .custom-title{
-    font-size: 36px;
-    line-height: 43px;
     color: #fff;
-    text-transform: uppercase; /*Все буквы заглавные*/
     padding-bottom: 22px;
     margin-bottom: 22px;
-    font-weight: normal;
     position: relative;
 }
 
@@ -640,7 +600,8 @@ input:invalid{
     width: 64px;
     background-color: #fff;
     bottom: 0;
-    left: 45%;
+    left: 50%;
+    transform: translate(-50%, 0);
 }
 
 .custom-about{
@@ -682,26 +643,6 @@ input:invalid{
     justify-content: space-between;
 }
 
-.contact-us-title{
-    font-size: 36px;
-    line-height: 43px;
-    text-transform: uppercase; /*Все буквы заглавные*/
-    padding-bottom: 22px;
-    margin-bottom: 22px;
-    font-weight: normal;
-    position: relative;
-}
-
-.contact-us-title::after{
-    content: "";
-    position: absolute;
-    height: 2px;
-    width: 64px;
-    background-color: #ff8b38;
-    bottom: 0;
-    left: 40%;
-}
-
 .contact-us-about{
     font-size: 14px;
     line-height: 20px;
@@ -714,13 +655,13 @@ input:invalid{
     justify-content: space-between;
 }
 
-.contact-us-form-date{
+.contact-us-form-data{
     display: flex;
     flex-direction: column;
     margin-right: 56px;
 }
 
-.contact-us-form-date>input{
+.contact-us-form-data>input{
     height: 32px;
     width: 527px;
     margin-bottom: 28px;
@@ -728,7 +669,7 @@ input:invalid{
     border-bottom-color: #DFDFDF;
 }
 
-.contact-us-form-date input:last-child{
+.contact-us-form-data input:last-child{
     margin-bottom: 46px;
 }
 
