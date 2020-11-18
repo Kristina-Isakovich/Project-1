@@ -93,6 +93,10 @@ input:invalid{
     margin-right: 22px;
 }
 
+.header-menu-item{
+    padding-bottom: 19px;
+}
+
 .header-menu a:hover{
     color: #FF9B51;
 }
@@ -406,7 +410,12 @@ input:invalid{
 .pricing-slot{
     min-width: 343px;
     line-height: 24px;
-    text-align: center;
+}
+
+.pricing-slot>p, .pricing-slot-header>p, .pricing-slot-header-pro>p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .pricing-slot:not(:last-child){
