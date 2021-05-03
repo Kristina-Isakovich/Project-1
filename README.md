@@ -1,4 +1,4 @@
-#ONE PAGE SITE
+#ONE PAGE
 
 The project was written using html and css(_flex_).
 
