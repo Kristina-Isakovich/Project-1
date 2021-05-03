@@ -68,13 +68,9 @@ input:invalid{
     background-color: #9d9ea2;
 }
 
-
-
-
-
 /* HEADER */
 .main-header{
-    padding: 0 145px;
+    padding: 0 140px;
     min-height: 64px;
     background-color: #000;
     display: flex;
@@ -101,21 +97,18 @@ input:invalid{
     color: #FF9B51;
 }
 
-
-
-
 /* MAIN-PANEL */
 .main-panel{
-    background-image: url("./img/image 1.png");
-    padding: 110px 145px;
+    background-image: url("img/image 1.png");
+    padding: 110px 140px;
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
 }
 
 .main-panel-container{
-    max-width: 542px;
+    max-width: 540px;
+    margin-right: 10px;
 }
 
 .main-panel-logo{
@@ -206,9 +199,6 @@ input:invalid{
     border-width: 0;
 }
 
-
-
-
 /* BRAND-BAR */
 .brand-bar{
     display: flex;
@@ -247,9 +237,7 @@ input:invalid{
     margin-right: 32px;
 }
 
-
 /* FEATURES */
-
 .features{
     min-height: 598px;
     background-color: #F5F5F5;
@@ -326,13 +314,10 @@ input:invalid{
     color: #fff;
 }
 
-
-
-
 /* OUR-PROCESS */
 .our-process{
     min-height: 585px;
-    padding: 105px 144px;
+    padding: 105px 140px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -379,14 +364,10 @@ input:invalid{
     text-align: center;
 }
 
-
-
-
 /* PRICING */
-
 .pricing{
     min-height: 900px;
-    padding: 105px 145px;
+    padding: 105px 140px;
     background-color: #F5F5F5;
     display: flex;
     flex-direction: column;
@@ -473,14 +454,10 @@ input:invalid{
     font-weight: bold;
 }
 
-
-
-
-
 /* REVIEWS */
 .reviews{
     min-height: 600px;
-    padding: 100px 170px;
+    padding: 100px 140px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -493,7 +470,6 @@ input:invalid{
     color: #86878B;
     margin-bottom: 85px;
 }
-
 
 .reviews-cases{
     display: flex;
@@ -561,16 +537,11 @@ input:invalid{
     line-height: 19px;
 }
 
-
-
-
 /* CUSTOM */
-
-
 .custom{
     min-height: 297px;
-    background: url("./img/architecture.png");
-    padding: 54px 145px;
+    background: url("img/architecture.png");
+    padding: 54px 140px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -614,14 +585,10 @@ input:invalid{
     transition-duration: .2s;
 }
 
-
-
-
-
 /* CONTACT US */
 .contact-us{
     min-height: 638px;
-    padding: 73px 155px 105px;
+    padding: 70px 140px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -637,30 +604,28 @@ input:invalid{
 
 .contact-us-form{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-    margin-bottom: 46px;
 }
 
 .contact-us-form-data{
     display: flex;
     flex-direction: column;
-    margin-right: 56px;
+    margin-right: 40px;
 }
 
 .contact-us-form-input{
-    height: 32px;
-    width: 527px;
+    height: 30px;
+    min-width: 500px;
     border-width: 0 0 1px 0;
+    margin-bottom: 30px;
     border-bottom-color: #DFDFDF;
-}
-
-.contact-us-form-input:not(:last-child){
-    margin-bottom: 28px;
 }
 
 .contact-us-form-message{
     height: 152px;
-    width: 509px;
+    min-width: 500px;
+    margin-bottom: 30px;
     border-width: 0 0 1px 0;
     border-bottom-color: #DFDFDF;
 }
@@ -675,13 +640,10 @@ input:invalid{
     font-weight: 600;
 }
 
-
-
-
 /* FOOTER */
 .footer{
-    min-height: 124px;
-    padding: 28px 145px;
+    min-height: 130px;
+    padding: 30px 140px;
     background-color: #000;
     display: flex;
     flex-direction: column;
